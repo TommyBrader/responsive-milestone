@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap");
+
+/* Navigation Bar */
+body,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+#home {
+  width: 40px;
+  height: 40px;
+}
+
+#nav-bar .pages {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 30px;
+  flex-grow: 1;
+}
+
+#nav-bar {
+  background-color: #fec89a;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#nav-bar li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.home {
+  padding: 7.5px;
+  border-right: 1px solid black;
+}
+
+.pages li a {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  padding: 0 10px;
+  transition: 0.2s;
+}
+
+.pages li a:hover {
+  background-color: #fb8500;
+  color: white;
+}
+
+/* Background */
+body {
+  background-color: #ffe5d9;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Introduction */
+h1 {
+  padding: 7.5px;
+  text-decoration: underline dotted #fec89a;
+  font-size: 2rem;
+}
+
+p {
+  padding-left: 7.5px;
+}
+
+/* Secondary and Tertiary Headings */
+h2 {
+  padding: 7.5px;
+  text-decoration: underline dotted #fec89a;
+  font-size: 1.75rem;
+}
+
+h3 {
+  padding: 7.5px;
+  text-decoration: underline dotted #fec89a;
+  font-size: 1rem;
+}
+
+/* Image */
+#fox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#fox a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5%;
+  border: 3px solid black;
+  transition: 1.5s;
+}
+
+#fox a:hover {
+  background-color: #003090;
+  color: white;
+  text-decoration: underline solid #fdbe11;
+}
+
+/* Lists */
+#list p {
+  text-decoration: underline wavy #fb8500;
+  font-size: 2rem;
+}
+
+#bullet {
+  list-style: circle inside;
+  padding-left: 10px;
+}
+
+#numbered {
+  color: #fb8500;
+  font-weight: bold;
+  list-style-type: lower-roman;
+}
+
+/* Forms */
+#forms form {
+  padding-left: 7.5px;
+}
+
+.clickbox {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.clickbox:active {
+  background-color: #fff9f7be;
+}
+
+#textbox button {
+  background-color: white;
+  transition: 1s;
+}
+
+#textbox button:hover {
+  background-color: #fb8500;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 0.8rem;
+  }
+}

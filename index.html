@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Completed Webpage for Milestone 6" />
+    <meta name="author" content="Tommy Brader" />
+    <title>Milestone 6</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="nav-bar">
+      <ul class="home">
+        <li>
+          <a href="index.html"><img src="home.png" alt="Home" id="home" /></a>
+        </li>
+      </ul>
+      <ul class="pages">
+        <li><a href="#image">Image</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#forms">Forms</a></li>
+      </ul>
+    </nav>
+
+    <section id="introduction">
+      <!-- Heading -->
+      <h1>Milestone 6</h1>
+
+      <!-- Introduction Text -->
+      <p>
+        Add proper CSS and responsiveness to your previous milestone. Be sure
+        your milestone contains at least a form, image(s), text, headings,
+        lists, and more if you can manage it all using semantic HTML with
+        accessibility.
+      </p>
+    </section>
+
+    <!-- Secondary Heading -->
+    <h2>Images, Lists and Forms</h2>
+
+      <!-- Image -->
+      <section id="image">
+      <h3>Image:</h3>
+      <figure id="fox">
+        <a href="https://www.lcfc.com/">
+          <img
+            src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/zen-fox-series-smiling-fox-portrait-roeselien-raimond.jpg"
+            width="262.5"
+            height="337.5"
+            alt="Smiling Fox"
+          />
+          <figcaption>A Smiling Fox Provides the Link to LCFC.com</figcaption>
+        </a>
+      </figure>
+    </section>
+
+    <!-- List -->
+    <section id="lists">
+      <h3>Lists:</h3>
+<div id="list">
+  <p>
+    Nested List:
+    <ul id="bullet">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li> Ordered List:
+        <ol id="numbered">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol></li>
+    </ul>
+  </p>
+</div>
+</section>
+<section id="forms">
+      <h3>Forms:</h3>
+      <div id="names">
+        <form >
+          First name: <input id = "firstname" type = "text" name = "first_name" class="clickbox"/>
+          <br>
+          Last name:  <input id = "lastname" type = "text" name = "last_name" class="clickbox"/>
+        </form>
+        </div>
+        <div id="textbox">
+          <p>
+        <form>
+          Text Box: <br>
+          <textarea rows = "5" cols = "40" name = "description" class="clickbox">Write Here...</textarea>
+          <br>
+          <button>Submit</button>
+        </form>
+        </p>
+        </div>
+        <div id="radiochoice">
+          <p>
+        Would you like: <br>
+        <form>
+            <input type = "radio" name = "foodchoice" value = "chicken"> Chicken
+            <input type = "radio" name = "foodchoice" value = "noodles"> Noodles
+            <input type = "radio" name = "foodchoice" value = "chilli"> Chilli
+            <input type = "radio" name = "foodchoice" value = "cake"> Cake
+         </form>
+        </p>
+        </div>
+        <div id="dropdown">
+          <p>
+          <label for="colour-select">What is your favourite colour?</label>
+        <select name="colours" id="colour-select" class="clickbox">
+            <option value="">--Please choose an option--</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
+        </select>
+        </p>
+        </div>
+        <div id="numbers">
+          <p>
+            <label for="n1">What is your favourite number?</label>
+            <input type="number" min="1" max="100" step="1" id="n1" name="number"
+                   pattern="\d+" class="clickbox">
+          </p>
+        </div>
+    </section>
+  </body>
+</html>
